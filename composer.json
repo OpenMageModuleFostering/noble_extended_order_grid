@@ -3,7 +3,7 @@
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
-    "description": "This Magento extension gives the user the flexibility to customize the orders grid in the admin.",
+    "description": "This extension gives the user the flexibility to customize the orders grid in the admin.",
     "authors": [
     {
         "name": "Gilles Lesire",
