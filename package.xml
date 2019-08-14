@@ -1,16 +1,22 @@
 <?xml version="1.0"?>
 <package>
     <name>Noble_Extended_Order_Grid</name>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <stability>stable</stability>
-    <license uri="https://raw.githubusercontent.com/KingIsulgard/Magento-Noble-Extended-Order-Grid/master/license.md">GPL</license>
+    <license uri="https://opensource.org/licenses/gpl-license.php">GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>This extension gives the user the flexibility to customize the orders grid in the admin.</summary>
-    <description>&lt;p&gt;&#xD;
-This extension gives the user the flexibility to customize the orders grid in the admin by removing existing columns or even adding custom columns to the grid.&#xD;
+    <description>&lt;h2&gt;Description&lt;/h2&gt;&#xD;
+&lt;p&gt;&#xD;
+Managing orders is probably the most frequent task you'll be doing in Magento when running your store. Unfortunately most of the information of an order is not visible in the order grid out of the box, making it impossible to filter on attributes which might be more relevant to you. &#xD;
 &lt;/p&gt;&#xD;
-&#xD;
+&lt;p&gt;&#xD;
+This extension gives the user the flexibility to customize the orders grid in the admin by removing existing columns or even adding custom columns to the grid. This way you will be able to customize and use the order grid however you want. Only display and be able to filter on the attributes you need for your store.&#xD;
+&lt;/p&gt;&#xD;
+&lt;p&gt;&#xD;
+Tailor your order grid using a simple to use form in the admin configuration area in just a few seconds. This is a real time saver for anyone who prefers not to mess around in the Magento core files himself.&#xD;
+&lt;/p&gt;&#xD;
 &lt;h2&gt;Overview&lt;/h2&gt;&#xD;
 &lt;ol&gt;&#xD;
 &lt;li&gt;Features&lt;/li&gt;&#xD;
@@ -55,12 +61,12 @@ Configuring the columns is very easy. Just login to your Magento Admin panel, go
 &lt;/p&gt;&#xD;
 &lt;h2&gt;4. Extra information&lt;/h2&gt;&#xD;
 &lt;p&gt;&#xD;
-Github: https://github.com/KingIsulgard/Magento-Noble-Extended-Order-Grid&lt;/p&gt;</description>
-    <notes>Added extended columns Weight and Remote IP</notes>
+&lt;a href="https://github.com/KingIsulgard/Magento-Noble-Extended-Order-Grid"&gt;Visit on GitHub&lt;/a&gt;&lt;/p&gt;</description>
+    <notes>Fixed issue with non standard payment methods not showing up in the column filter select field.</notes>
     <authors><author><name>Gilles Lesire</name><user>NobleHouse</user><email>gilles.lesire@gmail.com</email></author></authors>
-    <date>2016-02-03</date>
-    <time>11:08:41</time>
-    <contents><target name="magecommunity"><dir name="Noble"><dir name="AdminOrderGrid"><dir name="Block"><dir name="Sales"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="CustomerGroup.php" hash="0415c522a79744de05fdbabbe293233d"/><file name="Paymentmethod.php" hash="2bd441864434d36cf455cb8fbf7fd399"/><file name="Shippingmethod.php" hash="fb337469e0f8f40b91d9efc5197c4ce2"/></dir></dir><file name="Grid.php" hash="eea00fec48b19884f46c14b2110422df"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f26371c30f43b67fc7e8895e67af20b9"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Country.php" hash="15aaf45cb5ee39ac3dbf94cab44d46fd"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="dd8f9834661e4f43e6fe7b4176431b15"/><file name="config.xml" hash="467754d8e88bf2616c4cb3184f973f0f"/><file name="system.xml" hash="82875e917a5dc2a1b8a9647ab0a610f9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Noble_AdminOrderGrid.xml" hash="1637b9c7d1a23394272986444bc3880b"/></dir></target></contents>
+    <date>2016-02-09</date>
+    <time>13:12:46</time>
+    <contents><target name="magecommunity"><dir name="Noble"><dir name="AdminOrderGrid"><dir name="Block"><dir name="Sales"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="CustomerGroup.php" hash="0415c522a79744de05fdbabbe293233d"/><file name="Paymentmethod.php" hash="78748496a1d56afb0435db876f32c276"/><file name="Shippingmethod.php" hash="fb337469e0f8f40b91d9efc5197c4ce2"/></dir></dir><file name="Grid.php" hash="b27077b825f07c83888784f8205959bb"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f26371c30f43b67fc7e8895e67af20b9"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Country.php" hash="15aaf45cb5ee39ac3dbf94cab44d46fd"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="dd8f9834661e4f43e6fe7b4176431b15"/><file name="config.xml" hash="467754d8e88bf2616c4cb3184f973f0f"/><file name="system.xml" hash="82875e917a5dc2a1b8a9647ab0a610f9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Noble_AdminOrderGrid.xml" hash="1637b9c7d1a23394272986444bc3880b"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>4.0.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
