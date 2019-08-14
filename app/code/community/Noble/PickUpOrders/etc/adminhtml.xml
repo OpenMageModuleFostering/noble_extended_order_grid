@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <noble_pickuporders translate="title" module="noble_pickuporders">
+                    <sort_order>11</sort_order>
+                    <title>Afhaalorders</title>
+                    <action>adminhtml/pickuporder/</action>
+                </noble_pickuporders>
+            </children>
+        </sales>
+    </menu>
+</config>

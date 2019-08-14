@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
 <package>
     <name>Noble_Extended_Order_Grid</name>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <stability>stable</stability>
     <license uri="https://opensource.org/licenses/gpl-license.php">GPL</license>
     <channel>community</channel>
     <extends/>
     <summary>This extension gives the user the flexibility to customize the orders grid in the admin.</summary>
-    <description>&lt;h2&gt;Description&lt;/h2&gt;&#xD;
-&lt;p&gt;&#xD;
+    <description>&lt;p&gt;&#xD;
 Managing orders is probably the most frequent task you'll be doing in Magento when running your store. Unfortunately most of the information of an order is not visible in the order grid out of the box, making it impossible to filter on attributes which might be more relevant to you. &#xD;
 &lt;/p&gt;&#xD;
 &lt;p&gt;&#xD;
@@ -47,6 +46,7 @@ Available custom columns are:&#xD;
 - Customer Group&lt;br /&gt;&#xD;
 - Weight&lt;br /&gt;&#xD;
 - Remote IP&lt;br /&gt;&#xD;
+- Coupon code&lt;br /&gt;&#xD;
 &lt;/p&gt;&#xD;
 &lt;h2&gt;2. Implementation&lt;/h2&gt;&#xD;
 &lt;p&gt;&#xD;
@@ -62,11 +62,11 @@ Configuring the columns is very easy. Just login to your Magento Admin panel, go
 &lt;h2&gt;4. Extra information&lt;/h2&gt;&#xD;
 &lt;p&gt;&#xD;
 &lt;a href="https://github.com/KingIsulgard/Magento-Noble-Extended-Order-Grid"&gt;Visit on GitHub&lt;/a&gt;&lt;/p&gt;</description>
-    <notes>Fixed issue with non standard payment methods not showing up in the column filter select field.</notes>
-    <authors><author><name>Gilles Lesire</name><user>NobleHouse</user><email>gilles.lesire@gmail.com</email></author></authors>
-    <date>2016-02-09</date>
-    <time>13:12:46</time>
-    <contents><target name="magecommunity"><dir name="Noble"><dir name="AdminOrderGrid"><dir name="Block"><dir name="Sales"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="CustomerGroup.php" hash="0415c522a79744de05fdbabbe293233d"/><file name="Paymentmethod.php" hash="78748496a1d56afb0435db876f32c276"/><file name="Shippingmethod.php" hash="fb337469e0f8f40b91d9efc5197c4ce2"/></dir></dir><file name="Grid.php" hash="b27077b825f07c83888784f8205959bb"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="f26371c30f43b67fc7e8895e67af20b9"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Country.php" hash="15aaf45cb5ee39ac3dbf94cab44d46fd"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="dd8f9834661e4f43e6fe7b4176431b15"/><file name="config.xml" hash="467754d8e88bf2616c4cb3184f973f0f"/><file name="system.xml" hash="82875e917a5dc2a1b8a9647ab0a610f9"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Noble_AdminOrderGrid.xml" hash="1637b9c7d1a23394272986444bc3880b"/></dir></target></contents>
+    <notes>Added coupon code column.</notes>
+    <authors><author><name>Gilles Lesire</name><user>NobleHouse</user><email>gilles.lesire@noble-house.tk</email></author></authors>
+    <date>2016-02-17</date>
+    <time>17:04:49</time>
+    <contents><target name="magecommunity"><dir name="Noble"><dir name="AdminOrderGrid"><dir name="Block"><dir name="Sales"><dir name="Order"><dir name="Grid"><dir name="Renderer"><file name="CustomerGroup.php" hash="0415c522a79744de05fdbabbe293233d"/><file name="Paymentmethod.php" hash="78748496a1d56afb0435db876f32c276"/><file name="Shippingmethod.php" hash="fb337469e0f8f40b91d9efc5197c4ce2"/></dir></dir><file name="Grid.php" hash="89180324a2115a6ead2570505bbf4689"/></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="499a39af87fc5642604e93dd0ee9f294"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Country.php" hash="c153f42c3522fbf32963c59ab79c12fb"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="dd8f9834661e4f43e6fe7b4176431b15"/><file name="config.xml" hash="fe6514cd3ca2f331905a02892b021eae"/><file name="system.xml" hash="6e366d3578ab0f79e52fc5dd92a71be8"/></dir></dir><dir name="AutoInvoice"><dir name="Model"><file name="Observer.php" hash="1d4571dfe9b0e73ff05f5979b7bad9c0"/></dir><dir name="etc"><file name="config.xml" hash="509650794f0dd267d2dee9ba96f363ef"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="PickUpOrders"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="721c5ff4187ed1f8d265fed88c65f922"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name="Order.php" hash="e15c0a54b29c13a5830b969b311084b8"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="Helper"><file name="Data.php" hash="9478929620ef60358c0794d5ca9ed97e"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="PickuporderController.php" hash="b5df4be837e45debb5c53ae14e0fd96a"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="adminhtml.xml" hash="460a5361cb214f82674f54a4802376f0"/><file name="config.xml" hash="9f348006972adf69078b9e3c66b6f222"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="UPSOrders"><dir name="Block"><dir name="Adminhtml"><dir name="Sales"><dir name="Order"><file name="Grid.php" hash="a174e12a444e1e53561dbce6307dd7ae"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name="Order.php" hash="36108dfce8f389f3a89d855a1250c36c"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="Helper"><file name="Data.php" hash="da550aadb62e4c32b4c151004ee09675"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="UpsorderController.php" hash="6278740fd665f6275c6062c171fe15e4"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><dir name="etc"><file name="adminhtml.xml" hash="116c8f4bf7e4b9610905a70608237ef7"/><file name="config.xml" hash="98acd476cb4ecb82575dbdaa7b73a28c"/><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="194577a7e20bdcc7afbb718f502c134c"/></dir><file name=".DS_Store" hash="a686a5607d70f9aebb60d8b2f4260b00"/></dir></target><target name="mageetc"><dir name="modules"><file name="Noble_AdminOrderGrid.xml" hash="1637b9c7d1a23394272986444bc3880b"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>4.0.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

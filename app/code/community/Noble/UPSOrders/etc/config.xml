@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Noble_UPSOrders>
+            <version>0.0.0.1</version>
+        </Noble_UPSOrders>
+    </modules>
+    
+    <global>
+        <models>
+            <noble_upsorders>
+                <class>Noble_UPSOrders_Model</class>
+                <resourceModel>noble_upsorders_resource</resourceModel>
+            </noble_upsorders>
+        </models>
+        
+        <resources>
+            <noble_upsorders_setup>
+                <setup>
+                    <module>Noble_UPSOrders</module>
+                </setup>
+            </noble_upsorders_setup>
+        </resources>
+        
+        <blocks>
+            <noble_upsorders>
+                <class>Noble_UPSOrders_Block</class>
+            </noble_upsorders>
+        </blocks>
+        
+        <helpers>
+            <noble_upsorders>
+                <class>Noble_UPSOrders_Helper</class>
+            </noble_upsorders>
+        </helpers>
+    </global>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <noble_upsorders before="Mage_Adminhtml">Noble_UPSOrders_Adminhtml</noble_upsorders>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

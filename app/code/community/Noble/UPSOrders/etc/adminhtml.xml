@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <sales>
+            <children>
+                <noble_upsorders translate="title" module="noble_upsorders">
+                    <sort_order>12</sort_order>
+                    <title>UPS Orders</title>
+                    <action>adminhtml/upsorder/</action>
+                </noble_upsorders>
+            </children>
+        </sales>
+    </menu>
+</config>

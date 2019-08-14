@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Noble_PickUpOrders>
+            <version>0.0.0.1</version>
+        </Noble_PickUpOrders>
+    </modules>
+    
+    <global>
+        <models>
+            <noble_pickuporders>
+                <class>Noble_PickUpOrders_Model</class>
+                <resourceModel>noble_pickuporders_resource</resourceModel>
+            </noble_pickuporders>
+        </models>
+        
+        <resources>
+            <noble_pickuporders_setup>
+                <setup>
+                    <module>Noble_PickUpOrders</module>
+                </setup>
+            </noble_pickuporders_setup>
+        </resources>
+        
+        <blocks>
+            <noble_pickuporders>
+                <class>Noble_PickUpOrders_Block</class>
+            </noble_pickuporders>
+        </blocks>
+        
+        <helpers>
+            <noble_pickuporders>
+                <class>Noble_PickUpOrders_Helper</class>
+            </noble_pickuporders>
+        </helpers>
+    </global>
+    
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <noble_pickuporders before="Mage_Adminhtml">Noble_PickUpOrders_Adminhtml</noble_pickuporders>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
