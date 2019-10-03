@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Noble_Extended_Order_Grid",
+    "name": "OpenMageModuleFostering\/Noble_Extended_Order_Grid",
     "type": "magento-module",
     "license": "GPL",
     "homepage": "",
     "description": "This extension gives the user the flexibility to customize the orders grid in the admin.",
     "authors": [
-    {
-        "name": "Gilles Lesire",
-        "email": "gilles.lesire@noble-house.tk"
-    }
-],
+        {
+            "name": "Gilles Lesire",
+            "email": "gilles.lesire@noble-house.tk"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
